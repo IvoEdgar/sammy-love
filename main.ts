@@ -1,0 +1,15 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showString("Sammy")
+    basic.pause(500)
+    basic.clearScreen()
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showString("I")
+    basic.pause(500)
+    basic.showIcon(IconNames.Heart)
+    basic.pause(500)
+    basic.clearScreen()
+    basic.showString("You")
+    basic.pause(500)
+    basic.clearScreen()
+})
