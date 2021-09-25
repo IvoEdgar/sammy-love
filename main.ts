@@ -3,9 +3,23 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(500)
     basic.clearScreen()
 })
+input.onGesture(Gesture.Shake, function () {
+    for (let index = 0; index < 4; index++) {
+        basic.showIcon(IconNames.Heart)
+        basic.showIcon(IconNames.SmallHeart)
+        basic.pause(100)
+    }
+    basic.clearScreen()
+})
 input.onButtonPressed(Button.B, function () {
-    basic.showString("I")
-    basic.pause(500)
+    basic.showLeds(`
+        . # # # .
+        . . # . .
+        . . # . .
+        . . # . .
+        . # # # .
+        `)
+    basic.pause(2000)
     basic.showIcon(IconNames.Heart)
     basic.pause(500)
     basic.clearScreen()
