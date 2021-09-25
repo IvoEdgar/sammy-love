@@ -19,7 +19,7 @@ input.onButtonPressed(Button.B, function () {
         . . # . .
         . # # # .
         `)
-    basic.pause(2000)
+    basic.pause(1000)
     basic.showIcon(IconNames.Heart)
     basic.pause(500)
     basic.clearScreen()
